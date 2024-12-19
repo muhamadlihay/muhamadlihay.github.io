@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Layanan Ganti Oli - Flick Garage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="service-detail-info">
+            <h2>Layanan Ganti Oli Profesional</h2>
+            
+            <div id="service-overview">
+                <p>Ganti oli berkala adalah kunci utama menjaga performa dan umur mesin kendaraan Anda.</p>
+            </div>
+
+            <div id="service-details" class="service-detail">
+                <h3>Komponen Pemeriksaan:</h3>
+                <ol>
+                    <li>Pemeriksaan kondisi oli dan filter saat ini</li>
+                    <li>Drainase oli lama dengan prosedur yang tepat</li>
+                    <li>Penggantian filter oli sesuai spesifikasi kendaraan</li>
+                    <li>Pemeriksaan tekanan dan kualitas oli</li>
+                </ol>
+
+                <h3>Keunggulan Layanan:</h3>
+                <ul>
+                    <li>Teknisi berpengalaman dan tersertifikasi</li>
+                    <li>Menggunakan oli merek premium</li>
+                    <li>Garansi kualitas pekerjaan</li>
+                </ul>
+
+                <h3>Rekomendasi:</h3>
+                <li>Motor Matic: Setiap 3.000 - 4.000 km</li>
+                <li>Motor Standar: Setiap 2.000 - 3.000 km</li>
+                <li>Atau setiap 3 bulan, mana yang tercapai lebih dahulu</li>
+            </div>
+        </div>
+
+        <div class="button-navigation">
+            <button class="btn-service-info" onclick="toggleDetails()">Tampilkan/Sembunyikan Detail</button>
+            <button class="btn-back" onclick="goBack()">Kembali ke Layanan</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            const details = document.getElementById('service-details');
+            const overviewButton = document.querySelector('.btn-service-info');
+
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+                overviewButton.textContent = 'Pelajari Lebih Lanjut';
+            } else {
+                details.style.display = 'block';
+                overviewButton.textContent = 'Sembunyikan Detail';
+            }
+        }
+
+        function goBack() {
+            window.location.href = 'services.html';
+        }
+    </script>
+</body>
+</html>

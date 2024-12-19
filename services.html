@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Penjelasan Layanan - Flick Garage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <div id="services-explanation" class="section">
+      <h2>Penjelasan Layanan Kami</h2>
+      <p><b>Tekan logo untuk menjelajahi lebih banyak layanan kami</b></p>
+      <section class="services" id="layanan">
+        <div class="service-card" onclick="location.href='gantioli.html'">
+            <img src="logo oil time.jpg" alt="Ganti Oli">
+            <h3>Ganti Oli</h3>
+            <p>Oli berkualitas tinggi untuk performa optimal</p>
+        </div>
+        <div class="service-card" onclick="location.href='tuneup.html'">
+            <img src="engine.jpg" alt="Tune-Up Mesin">
+            <h3>Tune-Up Mesin</h3>
+            <p>Pemeriksaan menyeluruh sistem mesin</p>
+        </div>
+        <div class="service-card" onclick="location.href='perbaikanrem.html'">
+            <img src="rem.jpg" alt="Perbaikan Rem">
+            <h3>Perbaikan Rem</h3>
+            <p>Pastikan keamanan berkendara Anda</p>
+        </div>
+        <div class="service-card" onclick="location.href='serviskelistrikan.html'">
+            <img src="listrik.jpg" alt="Servis Kelistrikan">
+            <h3>Servis Kelistrikan</h3>
+            <p>Deteksi dan perbaikan sistem kelistrikan</p>
+        </div>
+    </section>
+      <p><button class="btn-back" onclick="goBack()">Kembali ke Halaman Utama</button></p>
+    </div>
+  </div>
+
+  <script>
+            function goBack() {
+            window.location.href = 'index.html';
+        }
+  </script>
+
+  <footer>
+    &copy; 2024 Flick Garage
+  </footer>
+</body>
+</html>

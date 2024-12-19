@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flick Garage - Bengkel Motor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="app">
+            <div id="home" class="section">
+                <h2>Selamat Datang di Flick Garage</h2>
+                <p>Kami adalah bengkel motor terpercaya yang berdedikasi untuk memberikan layanan berkualitas tinggi, memastikan kendaraan Anda selalu dalam kondisi prima. Dengan didukung oleh tim mekanik profesional yang berpengalaman.</p>
+                <a href="services.html" class="button">Lihat Layanan Kami</a>
+                <a href="about.html" class="button">Tentang Kami</a>
+        </div>
+
+    <div id="testimonials" class="section">
+      <h2>Testimoni Pelanggan</h2>
+      <div id="testimonial-list">
+        <p><strong>Wahyu:</strong> Pelayanan cepat dan profesional. Motor saya kembali seperti baru!</p>
+      </div>
+      <h3>Tambah Testimoni Anda</h3>
+      <form id="testimonial-form">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="testimonial">Testimoni:</label>
+        <textarea id="testimonial" name="testimonial" required></textarea>
+
+        <button type="submit">Kirim Testimoni</button>
+      </form>
+    </div>
+    <div id="contact" class="section">
+        <h2>Kontak Kami</h2>
+        <p>Email: flickgarage@toko-sparepartmotor.com</p>
+        <p>Telepon: 085698887777</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Flick Garage
+  </footer>
+  
+  <script>
+    const testimonialForm = document.getElementById('testimonial-form');
+    const testimonialList = document.getElementById('testimonial-list');
+
+    if (testimonialForm) { 
+    testimonialForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('name').value.trim();
+    const testimonial = document.getElementById('testimonial').value.trim();
+
+    if (name && testimonial) {
+      const newTestimonial = document.createElement('p');
+      newTestimonial.innerHTML = `<strong>${name}:</strong> ${testimonial}`;
+      testimonialList.appendChild(newTestimonial);
+
+      testimonialForm.reset();
+      alert('Testimoni Anda berhasil ditambahkan!');
+    }
+  });
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: 325px; 
+}
+
+.logo {
+    max-height: 300px;
+    max-width: 400px;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    background-color: rgb(249, 242, 242);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5f7fa;
+    color: rgb(10, 2, 2);
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button, .button-container button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover, .button-container button:hover {
+    background-color: #0056b3;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+.product-description ul {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    background-color: rgb(199, 187, 187);
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service-card img {
+    width: 90px;  /* Sesuaikan ukuran */
+    height: 90px; /* Sesuaikan ukuran */
+    object-fit: cover;
+    border-radius: 70%; /* Membuat foto berbentuk lingkaran */
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+
+/* Tambahkan di akhir file style.css */
+
+/* Styling untuk kontainer layanan detail */
+.service-detail-info {
+    background-color: rgb(249, 242, 242);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    animation: fadeIn 0.5s;
+}
+
+/* Animasi fade in */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Styling untuk detail layanan yang dapat disembunyikan */
+.service-detail {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Tombol informasi */
+.btn-service-info {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+
+.btn-service-info:hover {
+    background-color: #0056b3;
+}
+
+/* Tombol kembali */
+.btn-back {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+
+.btn-back:hover {
+    background-color: #545b62;
+}
+
+/* Kontainer navigasi */
+.button-navigation {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Styling list di dalam detail layanan */
+.service-detail ol, 
+.service-detail ul {
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.service-detail ol li, 
+.service-detail ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 600px) {
+    .service-detail-info {
+        padding: 10px;
+    }
+    
+    .btn-service-info,
+    .btn-back {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    .button-navigation {
+        flex-direction: column;
+    }
+}

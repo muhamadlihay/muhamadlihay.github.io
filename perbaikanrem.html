@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Layanan Perbaikan Rem - Flick Garage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div class="service-detail-info">
+            <h2>Layanan Perbaikan Rem Profesional</h2>
+            
+            <div id="service-overview">
+                <p>Sistem rem yang prima adalah kunci utama keselamatan berkendara. Kami menyediakan layanan perbaikan rem komprehensif.</p>
+            </div>
+
+            <div id="service-details" class="service-detail">
+                <h3>Komponen Pemeriksaan:</h3>
+                <ol>
+                    <li>Pemeriksaan ketebalan kampas rem</li>
+                    <li>Pengecekan kondisi discbrake/drumbrake</li>
+                    <li>Pemeriksaan sistem hidrolis rem</li>
+                    <li>Pengukuran ketegangan kabel rem</li>
+                    <li>Pembersihan dan pelumasan komponen rem</li>
+                    <li>Pengujian fungsional sistem rem</li>
+                </ol>
+
+                <h3>Keunggulan Layanan:</h3>
+                <ul>
+                    <li>Teknisi spesialis rem berpengalaman</li>
+                    <li>Menggunakan suku cadang berkualitas</li>
+                    <li>Disesuaikan untuk berbagai jenis kendaraan</li>
+                    <li>Jaminan keamanan dan performa optimal</li>
+                </ul>
+
+                <h3>Rekomendasi:</h3>
+                <li>Motor Matic: Setiap 4.000 - 5.000 km</li>
+                <li>Motor Standar: Setiap 2.500 - 3.500 km</li>
+                <li>Atau setiap 3-4 bulan, mana yang tercapai lebih dahulu</li>
+            </div>
+        </div>
+
+        <div class="button-navigation">
+            <button class="btn-service-info" onclick="toggleDetails()">Tampilkan/Sembunyikan Detail</button>
+            <button class="btn-back" onclick="goBack()">Kembali ke Layanan</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails() {
+            const details = document.getElementById('service-details');
+            const overviewButton = document.querySelector('.btn-service-info');
+
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+                overviewButton.textContent = 'Pelajari Lebih Lanjut';
+            } else {
+                details.style.display = 'block';
+                overviewButton.textContent = 'Sembunyikan Detail';
+            }
+        }
+
+        function goBack() {
+            window.location.href = 'services.html';
+        }
+    </script>
+</body>
+</html>
